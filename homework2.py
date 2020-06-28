@@ -1,7 +1,7 @@
 import math
 
 # 求二元一次方程函数
-def  function(a,b,c):
+def quadratic(a,b,c):
     if not (isinstance(a,(int,float)) and isinstance(b,(int,float)) and isinstance(c,(int,float))):
         raise TypeError('a,b,c只能为数字')
     if a==0:
@@ -17,5 +17,7 @@ def  function(a,b,c):
             x1=(-b+math.sqrt(d))/(2*a)
             x2=(-b-math.sqrt(d))/(2*a)
             return x1,x2
-print( function(2,3,5))
-
+a=int(input("输入a的值："))
+b=int(input("输入b的值："))
+c=int(input("输入c的值："))
+print(a,b,c)
